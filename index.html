@@ -348,7 +348,7 @@
   <script>
     // สุ่มค่า A1 และ A2 ระหว่าง 2000 - 2010 (มีทศนิยม 2 ตำแหน่ง)
     function getRandomA() {
-      return +(Math.random() * 10 + 2000).toFixed(2);
+      return +(Math.random() * 10 + 2000).toFixed(0);
     }
 
     // ปุ่มสุ่ม A1 และ A2
@@ -398,17 +398,17 @@
       const calculatedE = (D1 + D2) / 2;
 
       // แสดงผลลัพธ์
-      document.getElementById('resA1').textContent = A1.toFixed(2) + ' g';
-      document.getElementById('resB1').textContent = B1.toFixed(2) + ' g';
-      document.getElementById('resC1').textContent = C1.toFixed(2) + ' g';
-      document.getElementById('resD1').textContent = D1.toFixed(2) + ' %';
+      document.getElementById('resA1').textContent = A1.toFixed(0) + ' g';
+      document.getElementById('resB1').textContent = B1.toFixed(0) + ' g';
+      document.getElementById('resC1').textContent = C1.toFixed(1) + ' g';
+      document.getElementById('resD1').textContent = D1.toFixed(1) + ' %';
 
-      document.getElementById('resA2').textContent = A2.toFixed(2) + ' g';
-      document.getElementById('resB2').textContent = B2.toFixed(2) + ' g';
-      document.getElementById('resC2').textContent = C2.toFixed(2) + ' g';
-      document.getElementById('resD2').textContent = D2.toFixed(2) + ' %';
+      document.getElementById('resA2').textContent = A2.toFixed(0) + ' g';
+      document.getElementById('resB2').textContent = B2.toFixed(0) + ' g';
+      document.getElementById('resC2').textContent = C2.toFixed(1) + ' g';
+      document.getElementById('resD2').textContent = D2.toFixed(1) + ' %';
 
-      document.getElementById('resE').textContent = calculatedE.toFixed(2) + ' %';
+      document.getElementById('resE').textContent = calculatedE.toFixed(1) + ' %';
     }
 
     // ปุ่ม Reset
